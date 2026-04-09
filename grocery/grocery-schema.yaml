@@ -20,7 +20,6 @@ components:
       allOf:
         - $ref: "https://raw.githubusercontent.com/SurabhiAngadi/schemas/refs/heads/main/grocery/attributes.yaml#/components/schemas/RetailResource"
         - type: object
-          additionalProperties: false
           properties:
             nutrition:
               type: array
