@@ -12,7 +12,7 @@ components:
   schemas:
     GroceryResource:
       type: object
-      unevaluatedProperties: false
+      additionalProperties: false
       x-beckn-container: resourceAttributes
       x-jsonld:
         "@context": "https://schema.beckn.io/GroceryResource/v2.1/context.jsonld"
