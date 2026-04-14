@@ -12,13 +12,13 @@ components:
   schemas:
     GroceryResource:
       type: object
-      unevaluatedProperties: false
+      additionalProperties: false
       x-beckn-container: resourceAttributes
       x-jsonld:
         "@context": "https://schema.beckn.io/GroceryResource/v2.1/context.jsonld"
         "@type": groc:GroceryResource
       allOf:
-        - $ref: "https://raw.githubusercontent.com/SurabhiAngadi/schemas/refs/heads/main/grocery/attributes.yaml#/components/schemas/RetailResource"
+        - $ref: "https://schema.beckn.io/RetailResource/v2.1/attributes.yaml#/components/schemas/RetailResource"
         - type: object
           properties:
             nutrition:
